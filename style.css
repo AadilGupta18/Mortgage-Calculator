@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* To remove arrows in the input field type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Lime: hsl(61, 84%, 54%);
+  --light-lime: hsl(64, 100%, 97%);
+  --Red: hsl(4, 69%, 50%);
+  --White: hsl(0, 0%, 100%);
+  --Slate-100: hsl(202, 86%, 94%);
+  --Slate-300: hsl(203, 41%, 72%);
+  --Slate-500: hsl(200, 26%, 54%);
+  --Slate-700: hsl(200, 24%, 40%);
+  --Slate-900: hsl(202, 55%, 16%);
+  --Slate-dark: hsl(202, 56%, 12%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--Slate-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div {
+  background: var(--White);
+  width: 70%;
+  height: 85%;
+  box-shadow: 0px 0px 80px -70px rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-div,
+.right-div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-div {
+  background: var(--Slate-900);
+  border-radius: 0 25px 25px 100px;
+}
+
+.data-form {
+  /* background-color: red; */
+  height: 90%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-form .headings {
+  width: 100%;
+  height: 10%;
+  /* background: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-form .headings .left-heading h1 {
+  font-size: 1.6vw;
+  color: var(--Slate-900);
+}
+
+.data-form .headings .clear-btn button {
+  background: none;
+  border: none;
+  font-size: 1vw;
+  border-bottom: solid 1px var(--Slate-700);
+  padding-bottom: 0.5px;
+  color: var(--Slate-700);
+  cursor: pointer;
+}
+
+.data-form .form {
+  width: 100%;
+  height: 90%;
+}
+
+.data-form .form form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  /* background: pink; */
+}
+
+.data-form .form form .first-input {
+  /* background: green; */
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.data-form .form form .first-input .amount-heading p {
+  font-size: 1vw;
+  color: var(--Slate-700);
+  padding-bottom: 10px;
+}
+
+.data-form .form form .first-input .mortgage-amount {
+  display: flex;
+  height: 70%;
+}
+
+.data-form .form form .first-input .mortgage-amount .amount-icon {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4vw;
+  font-weight: 700;
+  background-color: var(--Slate-100);
+  color: var(--Slate-700);
+  border: 1px solid var(--Slate-700);
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.data-form .form form .first-input .mortgage-amount input {
+  width: 90%;
+  border: 1px solid var(--Slate-700);
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+  padding-left: 15px;
+  font-size: 1.4vw;
+  font-weight: 700;
+  outline: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.data-form .form form .first-input .mortgage-amount input:focus {
+  border-color: var(--Lime);
+}
+
+.data-form .form form .secondary-inputs {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  /* background: pink; */
+  margin-bottom: 40px;
+}
+
+.data-form .form form .secondary-inputs .second-input {
+  width: 45%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.data-form .form form .secondary-inputs .second-input div p {
+  font-size: 1vw;
+  color: var(--Slate-700);
+  padding-bottom: 10px;
+}
+
+.data-form .form form .secondary-inputs .second-input .second-main-input {
+  display: flex;
+  height: 70%;
+}
+
+.data-form .form form .secondary-inputs .second-input .term-input input,
+.data-form .form form .secondary-inputs .second-input .interest-input input {
+  height: 100%;
+  border: 1px solid var(--Slate-700);
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 15px;
+  font-size: 1.4vw;
+  font-weight: 700;
+  outline: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.data-form .form form .secondary-inputs .second-input .term-input input:focus,
+.data-form
+  .form
+  form
+  .secondary-inputs
+  .second-input
+  .interest-input
+  input:focus {
+  border-color: var(--Lime);
+}
+
+.data-form .form form .secondary-inputs .second-input .term-input input {
+  width: 70%;
+}
+
+.data-form .form form .secondary-inputs .second-input .interest-input input {
+  width: 80%;
+}
+
+.data-form .form form .secondary-inputs .second-input .second-main-input div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1vw;
+  font-weight: 700;
+  background-color: var(--Slate-100);
+  color: var(--Slate-700);
+  border: 1px solid var(--Slate-700);
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.data-form .form form .secondary-inputs .second-input .term-input div {
+  width: 30%;
+}
+
+.data-form .form form .secondary-inputs .second-input .interest-input div {
+  width: 20%;
+}
+
+.data-form .form form .third-inputs {
+  height: 33%;
+  width: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.data-form .form form .third-inputs .type-heading p {
+  font-size: 1vw;
+  color: var(--Slate-700);
+}
+
+.data-form .form form .third-inputs .mortgage-type {
+  height: 90%;
+  /* background: green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.data-form .form form .third-inputs .mortgage-type .radio-container {
+  height: 43%;
+  width: 100%;
+  border: 1px solid var(--Slate-700);
+  border-right: none;
+  padding-left: 15px;
+  font-size: 1vw;
+  font-weight: 700;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  background-color: white; /* Light yellow background */
+  border-radius: 5px;
+  border: 1px solid var(--Slate-700); /* Yellow-green border */
+  cursor: pointer;
+  color: var(--Slate-900);
+}
+
+.radio-container:first-child {
+  margin-top: 10px;
+}
+
+.radio-container input {
+  display: none;
+}
+
+.custom-radio {
+  height: 23px;
+  width: 23px;
+  background-color: white;
+  border: 2px solid var(--Slate-700); /* Yellow-green border */
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.radio-container input:checked + .custom-radio {
+  border: 2px solid var(--Lime); /* Yellow-green color for checked state */
+}
+
+.radio-container input:checked + .custom-radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 13px;
+  width: 13px;
+  background-color: var(--Lime);
+  border-radius: 50%;
+}
+
+.data-form .form form .calculate-payments {
+  width: 100%;
+  height: 11%;
+  /* background: red; */
+}
+
+.data-form .form form .calculate-payments button {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: var(--Lime);
+  color: var(--Slate-900);
+  font-weight: 700;
+  font-size: 1.2vw;
+  border: none;
+  cursor: pointer;
+  letter-spacing: -1px;
+}
+
+.data-form .form form .calculate-payments button img {
+  padding-right: 10px;
+  width: 40px;
+  height: auto;
+}
+
+/* Starting Right div */
+
+.default {
+  width: 100%;
+  height: 55%;
+  /* background: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.default img {
+  width: 40%;
+  height: auto;
+}
+
+.default .default-heading {
+  font-size: 1.7vw;
+  font-weight: bold;
+  color: var(--White);
+  letter-spacing: -1px;
+}
+
+.default .default-description {
+  font-size: 1vw;
+  text-align: center;
+  width: 80%;
+  line-height: 40px;
+  color: var(--Slate-300);
+}
+
+.result {
+  /* background: red; */
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.result-main {
+  /* background: pink; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.result .static-text {
+  width: 80%;
+  height: 30%;
+  /* background: green; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.result .static-text .static-heading {
+  font-size: 1.4vw;
+  font-weight: bold;
+  color: var(--White);
+}
+
+.result .static-text .static-description {
+  color: var(--Slate-300);
+  font-size: 1vw;
+  line-height: 40px;
+}
+
+.result .result-box {
+  height: 55%;
+  width: 80%;
+  background: var(--Slate-dark);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.result .result-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--Lime); /* Lime color effect on top */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.result .result-box .monthly-result {
+  height: 30%;
+  width: 80%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.result .result-box .monthly-result .monthly-heading {
+  font-size: 0.9vw;
+  color: var(--Slate-300);
+}
+
+.result .result-box .monthly-result .monthly-text {
+  font-size: 3vw;
+  font-weight: 700;
+  color: var(--Lime);
+}
+
+.result .result-box hr {
+  width: 80%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.result .result-box .total-result {
+  width: 80%;
+  height: 25%;
+  /* background-color: red; */
+}
+
+.result .result-box .total-result .total-heading {
+  font-size: 0.9vw;
+  color: var(--Slate-300);
+  margin-bottom: 15px;
+}
+
+.result .result-box .total-result .total-text {
+  font-size: 1.4vw;
+  color: var(--White);
+  font-weight: 700;
+}
+
+.error-msg {
+  color: var(--Red);
+  font-weight: 700;
+  padding-top: 10px;
+  font-size: 0.8vw;
+  visibility: hidden;
+}
